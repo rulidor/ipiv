@@ -1,0 +1,34 @@
+target_coverage,coverage_avg,coverage_std,PICP_sel_avg,PICP_sel_std,MPIW_sel_avg,MPIW_sel_std,RMSE_sel_avg,RMSE_sel_std,PICP_all_avg,PICP_all_std,MPIW_all_avg,MPIW_all_std,RMSE_all_avg,RMSE_all_std,aux_PICP_avg,aux_PICP_std,aux_MPIW_avg,aux_MPIW_std,aux_RMSE_avg,aux_RMSE_std,tau_avg,tau_std
+0.7,0.7373,0.0659,0.8633,0.0512,0.8236,0.0555,2.3584,0.2911,0.8235,0.062,0.8765,0.0964,3.0267,0.2821,0.9098,0.053,1.1355,0.2486,2.9143,0.2101,0.5685,0.2505
+0.75,0.8039,0.082,0.8986,0.032,0.9297,0.1234,2.5598,0.3001,0.8667,0.0322,0.9313,0.0766,2.86,0.4027,0.898,0.0377,1.0664,0.0891,2.7198,0.3216,0.5677,0.2091
+0.8,0.8392,0.0447,0.8691,0.0518,0.8889,0.0505,2.4491,0.3289,0.8196,0.0641,0.8809,0.0763,2.8499,0.194,0.9373,0.0256,1.117,0.1143,2.7706,0.3249,0.4502,0.2293
+0.85,0.898,0.0488,0.8785,0.0825,0.9362,0.1579,2.4726,0.1424,0.8549,0.0702,0.9447,0.1303,2.7391,0.2671,0.8824,0.0604,1.0926,0.1196,2.7354,0.147,0.615,0.2085
+0.9,0.9255,0.0671,0.9237,0.0102,1.0838,0.1753,2.5872,0.183,0.9098,0.0107,1.1063,0.1723,2.7623,0.1655,0.9451,0.0164,1.1436,0.0825,2.8659,0.1913,0.6713,0.1708
+0.95,0.9451,0.0726,0.9056,0.0494,1.0334,0.1437,2.722,0.3385,0.8902,0.0451,1.0428,0.1418,2.9203,0.1951,0.8824,0.0367,1.0331,0.1438,2.9201,0.2333,0.6495,0.3398
+
+minutes_taken,1.936
+dataset,boston
+aux_mode,piven
+_comment,Inherited from PIVEN: h_size, epochs, lambda_pi, sigma_in. lr capped at 0.005 (PIVEN's 0.02 crashes SP-PIVEN).
+dataset,boston
+h_size,[50]
+g_hidden_size,16
+c_pi,0.95
+alpha,0.5
+beta,0.5
+beta_h,0.5
+lambda_pi,15.0
+lambda_sel,32.0
+soften,160.0
+warmup_frac,0.0
+aux_mode,piven
+epochs,300
+patience,-1
+lr,0.005
+decay_rate,0.99
+sigma_in,0.1
+weight_decay,0.0
+out_biases,[3.0, -3.0]
+n_batch,100
+n_runs,5
+n_ensemble,1
